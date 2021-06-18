@@ -65,11 +65,10 @@ int mode(int arr[],int count)
     int model = modearr[0];
     for(int i=0;i<max;i++)
     {
-        if(arr[i]>mode)
+        if(modearr[i]>model)
         {
-            model=arr[i];
+            model=modearr[i];
         }
     }
     return model;
-
 }
