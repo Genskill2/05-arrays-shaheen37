@@ -54,7 +54,7 @@ int mode(int arr[],int count)
         if(cc>maxcount)
         {
             maxcount=cc;
-            maxval=a[i];
+            maxval=arr[i];
         }   
     }
 
