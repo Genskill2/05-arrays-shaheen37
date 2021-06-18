@@ -38,3 +38,36 @@ float average(int arr[],int count)
     avv/=count;
     return avv;
 }
+
+int mode(int arr[],int count)
+{
+    int max = arr[0];
+    for(int i=0;i<count;i++)
+    {
+        if(arr[i]>max)
+        {
+            max=arr[i];
+        }
+    }
+    int modearr[max];
+    for (int i=0;i<max;i++)
+    {
+        for(int k=0;k<count;k++)
+        {
+            if (arr[k]==i)
+            {
+                modearr[i]++;
+            }
+        }
+
+    }
+
+    int mode = modearr[0];
+    for(int i=0;i<max;i++)
+    {
+        if(arr[i]>mode)
+        {
+            mode=arr[i];
+        }
+    }
+    return mode;
